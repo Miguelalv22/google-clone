@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-bar ul {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    list-style: none;
+
+}
+
+.nav-bar li {
+    margin: 1rem;
+}
+
+.user-image img {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+main footer {
+    display: flex;
+}
+
+footer section ul {
+    display: flex;
+    list-style: none;
+}
