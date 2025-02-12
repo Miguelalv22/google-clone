@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google</title>
     <link rel="stylesheet" href="./app.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -14,10 +16,14 @@
             <ul>
                 <li><a href="">Gmail</a></li>
                 <li><a href="">Imagenes</a></li>
-                <li><button>Boton sin nombre</button></li>
+                <li>
+                    <picture class="google-apps-button">
+                        <img src="./img/apps-icon.png" alt="Google-apps-button" title="Google Apps">
+                    </picture>
+                </li>
                 <li>
                     <picture class="user-image">
-                        <img src="./img/shan-pose.jpg" alt="user-image" title="Imagen de Usuario">
+                        <img src="./img/shan-pose.jpg" alt="user-image" title="Cuenta de Google">
                     </picture>
                 </li>
             </ul>
@@ -25,12 +31,17 @@
 
     </header>
     <main>
-        <h2><a href="">Google</a></h2>
-        <input type="text">
-        <div>
-            <button>Buscar con Google</button>
+        <div class="logo-container">
+            <picture>
+                <img src="./img/google-logo.png" alt="">
+            </picture>
         </div>
-        <div>
+        <div class="search-container">
+            <input type="search">
+        </div>
+        <div class="button-container">
+            <button>Buscar con Google</button>
+
             <button>I'm Feeling Lucky</button>
         </div>
     </main>

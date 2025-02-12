@@ -1,3 +1,8 @@
+:root {
+    --font-gray: rgb(49, 49, 49);
+    --clear-gray: rgb(190, 185, 185);
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -6,14 +11,20 @@
 
 html {
     font-size: 62.5%;
+    font-family: "Plus Jakarta Sans", serif;
 }
 
 body {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
 }
 
 a {
     text-decoration: none;
+    color: black;
+}
+
+li a:hover {
+    text-decoration: underline;
 }
 
 .nav-bar ul {
@@ -28,6 +39,11 @@ a {
     margin: 1rem;
 }
 
+.google-apps-button img:hover {
+    background-color: gray;
+    border-radius: 50%;
+}
+
 .user-image img {
     height: 5rem;
     width: 5rem;
@@ -35,11 +51,62 @@ a {
     object-fit: contain;
 }
 
-main footer {
+main {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-container {
+    margin-top: 18rem;
+}
+
+.logo-container img {
+    height: 10rem;
+}
+
+.search-container {
+    margin-top: 2rem;
+}
+
+input {
+    font-size: 2rem;
+    height: 4.4rem;
+    width: 58rem;
+    border-radius: 5rem;
+    border-color: var(--font-gray);
+}
+
+.button-container {
+    margin-top: 3rem;
+}
+
+button {
+    font-weight: bold;
+    color: var(--font-gray);
+    height: 3.6rem;
+    width: 15rem;
+    margin: 0 .4rem;
+    border-radius: .5rem;
+    border-color: var(--clear-gray);
+    background-color: var(--clear-gray);
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    justify-content: space-between;
+    background-color: var(--clear-gray);
 }
 
 footer section ul {
+    margin: 0 1rem;
     display: flex;
     list-style: none;
+}
+
+section li {
+    margin: 2rem;
 }
