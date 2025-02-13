@@ -1,6 +1,6 @@
 :root {
     --font-gray: rgb(49, 49, 49);
-    --clear-gray: rgb(190, 185, 185);
+    --clear-gray: #dfe1e5;
     --black: #000000;
 }
 
@@ -43,6 +43,7 @@ nav .nav-right-section {
 nav .nav-right-section a {
     margin-right: 1rem;
     color: #000000;
+    font-weight: 600;
 }
 
 nav .nav-right-section li a:hover {
@@ -59,7 +60,7 @@ nav .nav-right-section .menu-icon {
 }
 
 nav .nav-right-section .menu-icon img:hover {
-    background-color: gray;
+    background-color: var(--clear-gray);
     border-radius: 50%;
 }
 
@@ -72,32 +73,45 @@ nav .nav-right-section .user-image img {
 }
 
 main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin-top: 15rem;
+    text-align: center;
 }
 
-.logo-container {
-    margin-top: 18rem;
+main .main-logo {
+    width: 53rem;
+    margin: 0 auto;
+    margin-bottom: 3.5rem;
 }
 
-.logo-container img {
+main .main-logo img {
+    width: 30rem;
     height: 10rem;
 }
 
-.search-container {
-    margin-top: 2rem;
+main .main-input {
+    width: 53rem;
+    margin: 0 auto;
+    margin-bottom: 3.5rem;
 }
 
-input {
+main .main-input-container {
+    width: 52rem;
+    border-radius: 10rem;
+    border: .1rem solid var(--clear-gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .main-input input {
     font-size: 2rem;
-    height: 4.4rem;
-    width: 58rem;
-    border-radius: 5rem;
-    border-color: var(--font-gray);
+    width: 45rem;
+    height: 4rem;
+    border: none;
+    outline: none;
 }
 
-.button-container {
+.main-buttons {
     margin-top: 3rem;
 }
 
