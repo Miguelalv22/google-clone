@@ -4,9 +4,10 @@
     --black: #000000;
     --black-hover: #000001;
     --shadow: #20212447;
-    --button-color: #f2f2f2;
+    --background-color: #f2f2f2;
     --button-hover-color: #c6c6c6;
     --button-font: #222;
+    --border-color: #e4e4e4;
 }
 
 html {
@@ -18,7 +19,7 @@ body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 
 a {
@@ -48,7 +49,6 @@ nav .nav-right-section {
 nav .nav-right-section a {
     margin-right: 1rem;
     color: #000000;
-    font-weight: 600;
 }
 
 nav .nav-right-section li a:hover {
@@ -78,19 +78,19 @@ nav .nav-right-section .user-image img {
 }
 
 main {
-    margin-top: 15rem;
+    margin-top: 20rem;
     text-align: center;
 }
 
 main .main-logo {
     width: 53rem;
     margin: 0 auto;
-    margin-bottom: 3.5rem;
+    margin-bottom: 2.5rem;
 }
 
 main .main-logo img {
-    width: 30rem;
-    height: 10rem;
+    width: 28rem;
+    height: 9.4rem;
 }
 
 main .main-input {
@@ -111,7 +111,7 @@ main .main-input-container {
 main .main-input input {
     font-size: 2rem;
     width: 45rem;
-    height: 4rem;
+    height: 4.5rem;
     border: none;
     outline: none;
 }
@@ -153,7 +153,7 @@ main .main-buttons div {
 
 main .main-buttons button {
     height: 3.6rem;
-    background-color: var(--button-color);
+    background-color: var(--background-color);
     border: none;
     font-size: 1.4rem;
     color: var(--font-gray);
@@ -170,19 +170,33 @@ main .main-buttons button:hover {
 
 footer {
     width: 100%;
-    display: flex;
+    height: 5rem;
     position: absolute;
     bottom: 0;
-    justify-content: space-between;
-    background-color: var(--clear-gray);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    font-size: 1.3rem;
+    background-color: var(--background-color);
+    border-top: .1rem solid var(--border-color);
 }
 
-footer section ul {
-    margin: 0 1rem;
+footer ul {
+    margin: 1rem;
     display: flex;
     list-style: none;
+    padding-left: 0;
 }
 
-section li {
-    margin: 2rem;
+footer .footer-left {
+    justify-self: left;
+}
+
+footer .footer-right {
+    justify-self: right;
+}
+
+footer ul li a {
+    margin: 1rem;
+    color: var(--font-gray);
 }
